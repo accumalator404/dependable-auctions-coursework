@@ -1,0 +1,10 @@
+Flow of Use
+
+After running script, run "java Client" to see commands usage.
+In order perform each command has to confirm with a re-register. 
+
+java Client to see usage
+
+java Client register to offically register a user
+
+then will be asked to register on each command use
