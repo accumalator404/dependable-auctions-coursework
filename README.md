@@ -44,15 +44,6 @@ int primaryID = frontend.getPrimaryReplicaID();
 - Concurrent request handling
 - Fault detection and recovery mechanisms
 
-## System Architecture
-
-```
-Client → Front-End Load Balancer → Primary Replica
-                                 ↓
-                           Backup Replicas
-                           (Stay Synchronized)
-```
-
 When primary fails, front-end automatically promotes a backup to primary.
 
 ## Running the System
@@ -67,20 +58,9 @@ When primary fails, front-end automatically promotes a backup to primary.
 # - Ready within 5 seconds
 ```
 
-## Fault Tolerance Capabilities
-
-The system handles these real-world scenarios:
-- ✅ Primary server crashes during active bidding
-- ✅ Multiple servers fail simultaneously 
-- ✅ All original servers replaced with new ones
-- ✅ Servers recover and rejoin automatically
-- ✅ Network communication failures
-
 ## Design Highlights
 
 - **No Polling**: Detects failures reactively during normal operation
 - **Fast Recovery**: Crashed servers sync automatically when restarting
 - **Scalable**: Efficient design that works with many replicas
 - **Consistent**: All replicas maintain identical auction data
-
-This project demonstrates building production-ready distributed systems with enterprise-level reliability and fault tolerance.
