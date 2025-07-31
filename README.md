@@ -1,6 +1,8 @@
-# Dependable Auction System
+# Fault-Tolerant Auction System
 
-A fault-tolerant distributed auction system implementing passive replication and automatic failover mechanisms using Java RMI.
+A distributed auction system implementing passive replication and automatic failover mechanisms using Java RMI.
+
+## What I Built
 
 ### Distributed Auction System with Replication
 - **Multi-Replica Architecture**: Built auction system with multiple server replicas for reliability
@@ -55,10 +57,6 @@ Client → Front-End Load Balancer → Primary Replica
 
 When primary fails, front-end automatically promotes a backup to primary.
 
-## Academic Context
-
-Final stage of **SCC.311 Distributed Systems** coursework at Lancaster University (45% of module grade). Demonstrates advanced understanding of building reliable distributed systems.
-
 ## Running the System
 
 ```bash
@@ -87,4 +85,4 @@ The system handles these real-world scenarios:
 - **Scalable**: Efficient design that works with many replicas
 - **Consistent**: All replicas maintain identical auction data
 
-This project demonstrates the complexity of building production-ready distributed systems with enterprise-level reliability requirements.
+This project demonstrates building production-ready distributed systems with enterprise-level reliability and fault tolerance.
