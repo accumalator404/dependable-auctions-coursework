@@ -37,13 +37,6 @@ int primaryID = frontend.getPrimaryReplicaID();
 - **System Architecture**: Load balancing, failover design
 - **Reliability Engineering**: Building systems that handle real failures
 
-## Technologies Used
-
-- Java RMI for distributed communication
-- Multi-process architecture
-- Concurrent request handling
-- Fault detection and recovery mechanisms
-
 When primary fails, front-end automatically promotes a backup to primary.
 
 ## Running the System
