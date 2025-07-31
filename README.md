@@ -2,8 +2,6 @@
 
 A distributed auction system implementing passive replication and automatic failover mechanisms using Java RMI.
 
-## What I Built
-
 ### Distributed Auction System with Replication
 - **Multi-Replica Architecture**: Built auction system with multiple server replicas for reliability
 - **Stateless Front-End**: Created load balancer that routes client requests to active replica
